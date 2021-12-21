@@ -1,10 +1,19 @@
 # Introduce
     Realize the delayed consumption of Kafka messages
 
+
 # Steps for usage
 ## Step1、
-    @KafkaDelayQueue(delayDuration = 1000)
+    <dependency>
+        <groupId>com.yxlisv</groupId>
+        <artifactId>kafka-delay-queue</artifactId>
+        <version>1.0.0</version>
+    </dependency>
+    
 ## Step2、
+    @KafkaDelayQueue(delayDuration = 1000)
+    
+## Step3、
     Method add param ConsumerRecord
 
 ## Example
