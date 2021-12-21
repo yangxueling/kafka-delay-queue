@@ -1,4 +1,4 @@
-package com.yxl.kafka.util;
+package com.yxlisv.kafka.util;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 

@@ -1,4 +1,4 @@
-package com.yxl.kafka.util;
+package com.yxlisv.kafka.util;
 
 import com.sun.tools.javac.model.JavacElements;
 import com.sun.tools.javac.tree.JCTree;
