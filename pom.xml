@@ -18,6 +18,27 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
+    <developers>
+        <developer>
+            <name>yangxueling</name>
+            <email>1326598912@qq.com</email>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git@github.com:yangxueling/kafka-delay-queue.git</connection>
+        <developerConnection>scm:git@github.com:yangxueling/kafka-delay-queue.git</developerConnection>
+        <url>https://github.com/yangxueling/kafka-delay-queue</url>
+    </scm>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>oss</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>oss</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
