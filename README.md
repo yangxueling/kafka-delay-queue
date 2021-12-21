@@ -7,7 +7,7 @@
     <dependency>
         <groupId>com.yxlisv</groupId>
         <artifactId>kafka-delay-queue</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
     </dependency>
     
 ## Step2、

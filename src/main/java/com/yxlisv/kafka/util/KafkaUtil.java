@@ -1,6 +1,8 @@
 package com.yxlisv.kafka.util;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Kafka工具类
@@ -9,6 +11,11 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
  * @date 2021/12/21
  */
 public class KafkaUtil {
+
+    /**
+     * logger
+     */
+    private final static Logger log = LoggerFactory.getLogger(KafkaUtil.class);
 
 
     /**
@@ -27,7 +34,7 @@ public class KafkaUtil {
             //未到执行时间，延迟执行
             if (System.currentTimeMillis() < executeTime) {
                 delayDuration = executeTime - System.currentTimeMillis();
-                System.out.println("延迟执行Kafka消息，delayDuration=" + delayDuration + ", msg=" + record.value());
+                log.debug("delay consumer kafka msg，delayDuration=" + delayDuration + ", msg=" + record.value());
                 Thread.sleep(delayDuration);
             }
         } catch (Exception ignored) {
