@@ -1,6 +1,5 @@
 package com.yxlisv.kafka.processor;
 
-import com.google.auto.service.AutoService;
 import com.sun.tools.javac.model.JavacElements;
 import com.sun.tools.javac.processing.JavacProcessingEnvironment;
 import com.sun.tools.javac.tree.JCTree;
@@ -11,7 +10,10 @@ import com.yxlisv.kafka.annotation.KafkaDelayQueue;
 import com.yxlisv.kafka.util.JsrUtil;
 import com.yxlisv.kafka.util.KafkaUtil;
 
-import javax.annotation.processing.*;
+import javax.annotation.processing.AbstractProcessor;
+import javax.annotation.processing.RoundEnvironment;
+import javax.annotation.processing.SupportedAnnotationTypes;
+import javax.annotation.processing.SupportedSourceVersion;
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.TypeElement;
@@ -25,7 +27,6 @@ import java.util.Set;
  * @date 2021/12/17
  */
 @SupportedAnnotationTypes("com.yxl.kafka.annotation.KafkaDelayQueue")
-@AutoService(Processor.class)
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 public class KafkaDelayQueueProcessor extends AbstractProcessor {
 
