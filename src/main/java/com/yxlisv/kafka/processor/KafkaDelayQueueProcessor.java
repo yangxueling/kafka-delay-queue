@@ -34,6 +34,8 @@ public class KafkaDelayQueueProcessor extends AbstractProcessor {
      * 处理方法
      * 在方法体前面加入前置校验
      *
+     * @param annotations TypeElement
+     * @param roundEnv    RoundEnvironment
      * @author yangxueling
      * @date 2021/12/17
      */

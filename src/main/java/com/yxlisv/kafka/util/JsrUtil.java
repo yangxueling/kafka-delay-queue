@@ -16,7 +16,9 @@ public class JsrUtil {
     /**
      * 获取打印表达式
      *
-     * @param msg 要打印的内容
+     * @param treeMaker    TreeMaker
+     * @param elementUtils TreeMaker.elementsUtil
+     * @param msg          要打印的内容
      * @author yangxueling
      * @date 2021/12/17
      */
@@ -44,6 +46,10 @@ public class JsrUtil {
     /**
      * 获取方法调用表达式
      *
+     * @param treeMaker    TreeMaker
+     * @param elementUtils TreeMaker.elementsUtil
+     * @param invokePath   调用路径：包名.类名.方法名
+     * @param args         方法参数
      * @author yangxueling
      * @date 2021/12/17
      */
@@ -76,6 +82,10 @@ public class JsrUtil {
     /**
      * 获取校验表达式
      *
+     * @param treeMaker    TreeMaker
+     * @param elementUtils TreeMaker.elementsUtil
+     * @param invokePath   调用路径：包名.类名.方法名
+     * @param args         方法参数
      * @author yangxueling
      * @date 2021/12/17
      */

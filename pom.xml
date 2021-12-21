@@ -101,6 +101,35 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <tags>
+                        <tag>
+                            <name>param</name>
+                            <placement>a</placement>
+                            <head>参数：</head>
+                        </tag>
+                        <tag>
+                            <name>return</name>
+                            <placement>a</placement>
+                            <head>返回值：</head>
+                        </tag>
+                        <tag>
+                            <name>author</name>
+                            <placement>a</placement>
+                            <head>作者：</head>
+                        </tag>
+                        <tag>
+                            <name>date</name>
+                            <placement>a</placement>
+                            <head>创建时间：</head>
+                        </tag>
+                        <tag>
+                            <name>version</name>
+                            <placement>a</placement>
+                            <head>版本号：</head>
+                        </tag>
+                    </tags>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
