@@ -8,7 +8,16 @@
     <artifactId>kafka-delay-queue</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
+
+    <url>https://github.com/yangxueling/kafka-delay-queue</url>
     <description>Kafka delay queue</description>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
 
     <dependencies>
         <dependency>
