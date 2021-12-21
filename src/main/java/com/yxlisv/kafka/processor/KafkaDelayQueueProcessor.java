@@ -21,12 +21,12 @@ import java.util.Set;
 
 
 /**
- * 使用JSR269规范解析KafkaDelayQueue
+ * 使用JSR269规范解析KafkaDelayQueue`
  *
  * @author yangxueling
  * @date 2021/12/17
  */
-@SupportedAnnotationTypes("com.yxl.kafka.annotation.KafkaDelayQueue")
+@SupportedAnnotationTypes("com.yxlisv.kafka.annotation.KafkaDelayQueue")
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 public class KafkaDelayQueueProcessor extends AbstractProcessor {
 
