@@ -32,6 +32,9 @@
     }
     
 ## Example KafkaListenerContainerFactory
+    @Resource
+    private Environment env;
+    
     @Bean
     public KafkaListenerContainerFactory<?> kafkaListenerFactory() {
 
