@@ -1,7 +1,7 @@
 # Introduce
-    Realize the delayed consumption of Kafka messages
-
-
+    Kafka consumer message delayed
+    
+    
 # Steps for usage
 ## Step1、
     <dependency>
@@ -11,15 +11,17 @@
     </dependency>
     
 ## Step2、
-    @KafkaDelayQueue(delayDuration = 10000)
-    
+    Consumer set ack mode as MANUAL_IMMEDIATE
+    factory.getContainerProperties().setAckMode(ContainerProperties.AckMode.MANUAL_IMMEDIATE);   
+     
 ## Step3、
-    Method add param ConsumerRecord
+    Consumer listener method add param ConsumerRecord
     
 ## Step4、
-    factory.getContainerProperties().setAckMode(ContainerProperties.AckMode.MANUAL_IMMEDIATE);
-
-## Example
+    Add @KafkaDelayQueue for Consumer listener method
+    @KafkaDelayQueue(delayDuration = 10000)
+    
+## Example Consumer listener method
     @KafkaDelayQueue(delayDuration = 10000)
     @KafkaListener(
             topics = {"testYxlTopic"},
