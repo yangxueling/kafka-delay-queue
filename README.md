@@ -11,7 +11,7 @@
     </dependency>
     
 ## Step2、
-    @KafkaDelayQueue(delayDuration = 1000)
+    @KafkaDelayQueue(delayDuration = 10000)
     
 ## Step3、
     Method add param ConsumerRecord
@@ -20,12 +20,12 @@
     factory.getContainerProperties().setAckMode(ContainerProperties.AckMode.MANUAL_IMMEDIATE);
 
 ## Example
-    @KafkaDelayQueue(delayDuration = 1000)
+    @KafkaDelayQueue(delayDuration = 10000)
     @KafkaListener(
             topics = {"testYxlTopic"},
             containerFactory = "kafkaListenerFactory"
     )
-    public void processDelayMsg(ConsumerRecord<String, String> record, Acknowledgment ack) throws JsonProcessingException {
+    public void processDelayMsg(ConsumerRecord<String, String> record, Acknowledgment ack) {
 
         long createTime = record.timestamp();
         ack.acknowledge();
